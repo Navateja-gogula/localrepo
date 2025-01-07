@@ -5,3 +5,7 @@
 > This is a quote.
 This is a quote.  
 
+| Column 1 | Column 2 | Column 3 |  
+|----------|----------|----------|  
+| Row 1    | Data     | Info     |  
+| Row 2    | Data     | Info     |  
