@@ -9,3 +9,8 @@ This is a quote.
 |----------|----------|----------|  
 | Row 1    | Data     | Info     |  
 | Row 2    | Data     | Info     |  
+
+**Bold Text**  
+*Italic Text*  
+~~Strikethrough~~  
+**_Bold and Italic_**  
