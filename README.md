@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -68,3 +69,21 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+=======
+# This is my Local repo.
+## heading
+[Visit GitHub](https://github.com)  
+![Alt Text](https://via.placeholder.com/150)  
+> This is a quote.
+This is a quote.  
+
+| Column 1 | Column 2 | Column 3 |  
+|----------|----------|----------|  
+| Row 1    | Data     | Info     |  
+| Row 2    | Data     | Info     |  
+
+**Bold Text**  
+*Italic Text*  
+~~Strikethrough~~  
+**_Bold and Italic_**  
+>>>>>>> 43ee438ef98e6ead0a076484df57a1088fe17b0d
