@@ -2,6 +2,7 @@
   "name": "react-todo-app",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://Navateja-gogula.github.io/localrepo",
   "dependencies": {
     "cra-template": "1.2.0",
     "react": "^19.0.0",
@@ -15,7 +16,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build -r https://$GIT@github.com/Navateja-gogula/localrepo.git"
+    "deploy": "gh-pages -d build -r https://$GITHUB_TOKEN@github.com/Navateja-gogula/localrepo.git"
   },
   "eslintConfig": {
     "extends": [

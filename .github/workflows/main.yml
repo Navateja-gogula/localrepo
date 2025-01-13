@@ -45,10 +45,10 @@ jobs:
       # Set up authentication for GitHub Pages
       - name: Set up authentication for GitHub Pages
         run: |
-          git config --global url."https://${{ secrets.GIT }}@github.com/".insteadOf "https://github.com/"
+          git config --global url."https://${{ secrets.GITHUB_TOKEN }}@github.com/".insteadOf "https://github.com/"
 
       # Deploy to GitHub Pages
       - name: Deploy to GitHub Pages
         run: npm run deploy
         env:
-          GITHUB_TOKEN: ${{ secrets.GIT }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
