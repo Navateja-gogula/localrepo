@@ -1,0 +1,54 @@
+name: CI/CD for React App
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write  # Gives write permissions to the repository contents
+      pages: write     # Gives write permissions to push to GitHub Pages
+
+    steps:
+      # Checkout the repository
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      # Setup Node.js
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16
+
+      # Install dependencies
+      - name: Install dependencies
+        run: npm install
+
+      # Run tests
+      - name: Run tests
+        run: npm test -- --watchAll=false
+
+      # Build the app
+      - name: Build the app
+        run: npm run build
+
+      # Set Git user identity for deployment
+      - name: Set Git user
+        run: |
+          git config --global user.name "Navateja-gogula"
+          git config --global user.email "ngogula@anergroup.com"
+
+      # Set up authentication for GitHub Pages
+      - name: Set up authentication for GitHub Pages
+        run: |
+          git config --global url."https://${{ secrets.GIT }}@github.com/".insteadOf "https://github.com/"
+
+      # Deploy to GitHub Pages
+      - name: Deploy to GitHub Pages
+        run: npm run deploy
+        env:
+          GITHUB_TOKEN: ${{ secrets.GIT }}
