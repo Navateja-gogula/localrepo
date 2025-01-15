@@ -13,9 +13,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build -r https://$GITHUB_TOKEN@github.com/Navateja-gogula/localrepo.git"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
@@ -41,5 +39,5 @@
     "@testing-library/react": "^16.1.0",
     "gh-pages": "^6.3.0"
   },
-  "homepage": "https://Navateja-gogula.github.io/localrepo"
+  "homepage": "https://enchanting-scone-5be44e.netlify.app"
 }
